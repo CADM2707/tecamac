@@ -3,7 +3,7 @@
 @section('title', 'TECÁMAC')
 
 @section('content_header')
-    <h1> <span class="fa fa-home"></span> Pagina de inicio</h1><br>
+    <h1 style=" color: #454747"> <span class="fa fa-home"></span> Pagina de inicio</h1><br>
 @stop
 
 @section('content')  

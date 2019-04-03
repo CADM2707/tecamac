@@ -3,7 +3,7 @@
 @section('title', 'TECÁMAC')
 
 @section('content_header')
-<h1>
+<h1 style=" color: #454747">
     <span class="fa fa-pencil-square">
     </span>
     Nueva solicitud
@@ -22,23 +22,24 @@
                     <div class="row">
                         <div class="col-md-1 col-xs-0">
                         </div>                        
-                        <div class="col-md-10" style=" background-color: #F0F0F0 ;"><br>                         
+                        <div class="col-md-10" style=" background-color: #F0F0F0 ;"><br>  
+                        <form action="{{ URL::route('solicitud.guardar') }}">                       
                                 <div class="row">
                                   <div class="col-sm-3 col-xs-12" >
                                     <label>CURP</label>
-                                    <input onchange="getData()" value="JADL920807HSWSS0" class="form form-control" type="text" name="curp" required="true">
+                                    <input required="true" onchange="getData()" value="JADL920807HSWSS0" class="form form-control" type="text" name="curp" required="true">
                                   </div>
                                   <div class="col-sm-3 col-xs-12" >
                                     <label>Nombre</label>
-                                    <input readonly="true" class="form form-control" type="text" id="nombre" name="nombre" required="true">
+                                    <input required="true" readonly="true" class="form form-control" type="text" id="nombre" name="nombre" required="true">
                                   </div>
                                   <div class="col-sm-3 col-xs-12" >
                                     <label>Apellido Paterno</label>
-                                    <input readonly="true"  class="form form-control" type="text" id="aPat" name="aMat" required="true">
+                                    <input required="true" readonly="true"  class="form form-control" type="text" id="aPat" name="aMat" required="true">
                                   </div>
                                   <div class="col-sm-3 col-xs-12" >
                                     <label>Apellido Materno</label>
-                                    <input readonly="true" class="form form-control" type="text" id="aMat" name="aMat" required="true">
+                                    <input required="true" readonly="true" class="form form-control" type="text" id="aMat" name="aMat" required="true">
                                   </div>
                                 </div>
                                 <br>
@@ -214,7 +215,7 @@
                                 </div>
                                 </div>
                                 <div class="row text-center">
-                                  <a class="btn btn-primary form-control" type="button" href="{{ URL::route('solicitud.guardar') }}">Guardar</a>
+                                  <button  class="btn btn-primary form-control" type="submit" href="">Guardar</button>
                         </div>
                     </div>
                     </form>

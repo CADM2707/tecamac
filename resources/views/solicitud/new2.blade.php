@@ -3,7 +3,7 @@
 @section('title', 'TECÁMAC')
 
 @section('content_header')
-<h1>
+<h1 style=" color: #454747">
     <span class="fa fa-pencil-square">
     </span>
     Nueva solicitud
